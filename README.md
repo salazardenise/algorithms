@@ -1,2 +1,2 @@
-# algorithms
-A compilation of several algorithms to showcase programming skills.
+# algorithms-practice
+A compilation of Java implementation of several data structures and algorithms.
