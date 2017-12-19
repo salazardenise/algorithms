@@ -34,7 +34,8 @@ public class Mergesort {
 			FileWriter fileWriter = new FileWriter(file);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 			for (int i = 0; i < n; i++) {
-				bufferedWriter.write(sortedArr[i] + " ");
+				bufferedWriter.write(Integer.toString(sortedArr[i]));
+				bufferedWriter.newLine();
 			}
 			bufferedWriter.close();
 			
