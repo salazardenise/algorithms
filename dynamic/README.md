@@ -15,7 +15,7 @@ Example: W = 100
 | 2    | 50 | 50 | 1     |
 | 3    | 50 | 50 | 1     |
 
-A greedy approach would be to pick the 1st k items sorted by v/w. In this example, it picks item 1 first and puts it in the knapsack. It then halts because adding items 2 or 3 to the knapsack will exceed the knapsack's total capacity. The greedy algorithm thus consists of only item 1 with a value of 52. The dynamic programming algorithm proposed here will pick the optimal subset of items 2 and 3, which fills the entire knapsack with an optimal value of 100.
+A greedy approach would be to pick the 1st k items sorted by v/w. In this example, it picks item 1 first and puts it in the knapsack. It then halts because adding items 2 or 3 to the knapsack will exceed the knapsack's total capacity. The greedy solution thus consists of only item 1 with a value of 52. The dynamic programming algorithm proposed here will pick the optimal subset of items 2 and 3, which fills the entire knapsack with an optimal value of 100.
 
 ### Input 
 
