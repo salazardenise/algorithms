@@ -10,7 +10,7 @@ public class Knapsack {
 		String fileName = args[0];
 		int W = Integer.parseInt(args[1]);
 		if (W < 0) {
-			System.out.println("ERROR: total capacity W mus be a nonnegative integer.");
+			System.out.println("ERROR: total capacity W must be a non-negative integer.");
 			return;
 		}
 
@@ -23,7 +23,7 @@ public class Knapsack {
 				int value = scanner.nextInt();
 				int weight = scanner.nextInt();
 				if (weight < 0 || value < 0) {
-					System.out.println("ERROR: weight and value of all items must be nonengative integers.");
+					System.out.println("ERROR: weight and value of all items must be non-negative integers.");
 					return;
 				}
 				Item item = new Item(value, weight);
@@ -40,6 +40,7 @@ public class Knapsack {
 			FileWriter fileWriter = new FileWriter(file);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 			bufferedWriter.write(Integer.toString(optimalValue));
+			bufferedWriter.newLine();
 			bufferedWriter.close();
 			
 		} catch (FileNotFoundException e){
