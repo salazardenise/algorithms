@@ -13,6 +13,7 @@ Note: The list must be in ascending order.
 Usage
 -------------
 An example of the usage of one of the implementations is as follows. k is the key that is being searched for.
+Note: k must be an integer.
 ```
 $ javac BinarySearch.java
 $ java BinarySearch input.txt k
