@@ -15,7 +15,7 @@ public class HeapSelect {
 		// get k
 		int k = Integer.parseInt(args[1]);
 		if (k < 1) {
-			System.out.println("k must be larger than or equal to one.");
+			System.out.println("ERROR: k must be larger than or equal to 1.");
 			return;
 		}
 		
@@ -30,7 +30,7 @@ public class HeapSelect {
 			scanner.close();
 			int n = list.size();
 			if (k > n) {
-				System.out.println("k must be smaller than or equal tp the total number of integers");
+				System.out.println("ERROR: k must be smaller than or equal to the total number of integers, " + n +".");
 				return;
 			}
 			int[] arr = new int[n];
@@ -51,9 +51,9 @@ public class HeapSelect {
 			bufferedWriter.close();
 			
 		} catch (FileNotFoundException e){
-			System.out.println(fileName + " file not found.");
+			System.out.println("ERROR: " + fileName + " file not found.");
 		} catch (IOException e1) {
-			System.out.println("Error writing to file " + outputFileName);
+			System.out.println("ERROR: could not write to file " + outputFileName +".");
 			e1.printStackTrace();
 		}
 
