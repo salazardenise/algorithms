@@ -7,6 +7,12 @@ Implementations of the following sorting algorithms are included thus far:
 - Mergesort
 - Quicksort
 
+The following charts compare the run times for the sorting algorithms. Insertion sort is the slowest as the input size, n, grows. Merge sort and Quick sort are similar in run times. 
+
+![timeComparisons3Sorts](timeComparison3Sorts.png)
+
+![timeComparisons2SortsV1](timeComparison2SortsV1.png)
+
 Input 
 ----------
 
