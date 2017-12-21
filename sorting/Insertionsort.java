@@ -50,12 +50,9 @@ public class Insertionsort {
 	}
 	
 	private static void swap(List<Integer> list, int i, int j) {
-		int temp_i = list.get(i);
-		int temp_j = list.get(j);
-		list.remove(i);
-		list.add(i, temp_j);
-		list.remove(j);
-		list.add(j, temp_i);
+		int temp = list.get(i);
+		list.set(i, list.get(j));
+		list.set(j, temp);
 	}
 
 }
